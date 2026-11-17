@@ -1,0 +1,47 @@
+{
+  "name": "travel-bite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0 <27"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "dev:next": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "seed": "tsx scripts/seed.ts",
+    "admin": "tsx scripts/admin.ts",
+    "setup:env": "node scripts/create-env.mjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "check:production": "tsx scripts/production-check.ts",
+    "format": "prettier --write src scripts tests *.json *.ts *.md"
+  },
+  "dependencies": {
+    "@better-auth/mongo-adapter": "^1.7.25",
+    "better-auth": "^1.7.25",
+    "lucide-react": "^0.577.0",
+    "mongodb": "^7.9.0",
+    "next": "^16.4.6",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.0.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "dotenv": "^17.3.1",
+    "mongodb-memory-server": "^11.3.0",
+    "prettier": "^3.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
