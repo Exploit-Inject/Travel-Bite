@@ -1,0 +1,14 @@
+node_modules
+.next*
+.data
+.env*
+.git
+test-results
+playwright-report
+*.log
+*.tsbuildinfo
+*.pem
+*.key
+*.p12
+*.pfx
+.vercel
